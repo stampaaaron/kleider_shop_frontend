@@ -1,0 +1,7 @@
+@import'src/variables.scss';
+
+.wrapper {
+  background-color: $page-background-color;
+  width: $wrapper-size;
+  min-height: 800px;
+}

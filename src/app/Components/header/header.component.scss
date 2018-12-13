@@ -1,0 +1,15 @@
+@import'src/variables.scss';
+
+header {
+  height: 80px;
+  background-color: $main-color;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .wrapper {
+    width: $wrapper-size
+  }
+
+}
