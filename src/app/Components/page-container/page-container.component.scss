@@ -6,3 +6,9 @@
   border-radius: 3px;
   box-shadow: 3px 3px 15px lighten(black, 80);
 }
+
+@media screen and (max-width: 500px) {
+  .page-container {
+    padding: 20px;
+  }
+}

@@ -1,0 +1,6 @@
+<app-page-container>
+  <h2>Warenkorb</h2>
+  <ng-container *ngFor="let item of shoppingCartService.clothesItems">
+    <app-shopping-cart-item [item]="item"></app-shopping-cart-item>
+  </ng-container>
+</app-page-container>

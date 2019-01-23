@@ -15,6 +15,9 @@ import { ClothesItemComponent } from './pages/user/clothes-list/clothes-item/clo
 import { ClothesDetailComponent } from './pages/user/clothes-detail/clothes-detail.component';
 import { PageContainerComponent } from './Components/page-container/page-container.component';
 import { HorizontalDividerComponent } from './Components/horizontal-divider/horizontal-divider.component';
+import { ShoppingcartComponent } from './pages/shoppingcart/shoppingcart.component';
+import { ShoppingCartItemComponent } from './pages/shoppingcart/shopping-cart-item/shopping-cart-item.component';
+import { CounterComponent } from "./Components/counter/counter.component";
 
 @NgModule({
   declarations: [
@@ -27,7 +30,10 @@ import { HorizontalDividerComponent } from './Components/horizontal-divider/hori
     ClothesItemComponent,
     ClothesDetailComponent,
     PageContainerComponent,
-    HorizontalDividerComponent
+    HorizontalDividerComponent,
+    ShoppingcartComponent,
+    ShoppingCartItemComponent,
+    CounterComponent
   ],
   imports: [
     BrowserModule,

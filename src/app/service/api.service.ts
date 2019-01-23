@@ -10,12 +10,10 @@ export class ApiService {
   constructor(private http: HttpClient) { }
 
   getClothes(): Observable<Clothes[]> {
-    console.log(this.http.get(`${environment.restURL}/clothes`));
     return this.http.get<Clothes[]>(`${environment.restURL}/clothes`);
   }
 
   getClothesById(id: number): Observable<Clothes> {
-    console.log(this.http.get<Clothes>(`${environment.restURL}/clothes/${id}`));
     return this.http.get<Clothes>(`${environment.restURL}/clothes/${id}`);
   }
 

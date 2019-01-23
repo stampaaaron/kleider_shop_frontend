@@ -1,0 +1,12 @@
+@import "~src/variables";
+
+.content {
+  padding: 10px 0;
+  border-top: 1px solid $divider-color;
+  display: flex;
+
+  .image-box {
+    width: 150px;
+    height: 100px;
+  }
+}

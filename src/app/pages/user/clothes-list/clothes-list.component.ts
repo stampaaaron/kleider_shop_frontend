@@ -16,7 +16,6 @@ export class ClothesListComponent implements OnInit {
   ngOnInit() {
     this.apiService.getClothes().subscribe(clothes => {
       this.clothes = clothes;
-      console.log(clothes);
     });
   }
 

@@ -4,8 +4,6 @@ app-page-container {
 
   h2 {
     text-transform: capitalize;
-    font-size: 2rem;
-    margin-bottom: 40px;
   }
 
   h3 {
@@ -23,31 +21,40 @@ app-page-container {
       height: auto;
     }
 
-    @media screen and (max-width: 1000px) {
-
-      flex-direction: column;
-
-      .image-box {
-        min-width: 0;
-      }
-
-      .text-box {
-        min-width: 0;
-      }
-    }
-
     .text-box {
       background-color: $page-background-color-second;
       padding: 20px;
       border-radius: 3px;
       min-width: 300px;
       flex: 1;
+      position: relative;
       table {
         width: 100%;
         tr {
           height: 30px;
         }
       }
+
+      app-icon-button {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+
+    .content {
+      flex-direction: column;
+    }
+
+    .image-box {
+      min-width: 0 !important;
+    }
+
+    .text-box {
+      min-width: 0 !important;
     }
   }
 

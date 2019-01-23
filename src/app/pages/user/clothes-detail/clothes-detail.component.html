@@ -35,6 +35,7 @@
         <app-horizontal-divider></app-horizontal-divider>
         <h3>Description:</h3>
         <p>{{item.description}}</p>
+        <app-icon-button (click)="shoppingCartService.addItem(item)">shopping_cart</app-icon-button>
       </div>
     </div>
   </ng-container>

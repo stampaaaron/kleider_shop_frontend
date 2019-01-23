@@ -1,0 +1,16 @@
+.counter-container {
+  display: flex;
+  justify-content: flex-start;
+
+  app-icon-button {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+
+  input {
+    flex: 2;
+    text-align: center;
+  }
+
+}

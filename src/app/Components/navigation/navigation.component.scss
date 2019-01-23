@@ -1,0 +1,21 @@
+nav {
+  display: flex;
+
+  a {
+    color: white;
+    user-select: none;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    margin-left: 10px;
+
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+
+}
+

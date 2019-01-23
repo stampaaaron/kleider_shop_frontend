@@ -5,11 +5,33 @@ header {
   background-color: $main-color;
   color: white;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
 
   .wrapper {
-    width: $wrapper-size
+    width: $wrapper-size;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    app-navigation {
+      align-self: flex-end;
+    }
+  }
+
+
+  @media screen and (max-width: 1250px) {
+    .wrapper {
+      width: 75%;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .wrapper {
+      width: 90%;
+    }
   }
 
 }
+
