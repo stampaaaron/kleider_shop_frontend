@@ -1,0 +1,16 @@
+@import "~src/variables";
+
+app-icon {
+
+  display: block;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  padding: 8px;
+  box-sizing: content-box;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $icon-hover;
+  }
+}

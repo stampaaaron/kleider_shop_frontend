@@ -1,7 +1,19 @@
-@import'src/variables.scss';
+@import'~src/variables';
 
 .wrapper {
-  background-color: $page-background-color;
   width: $wrapper-size;
   min-height: 800px;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 1250px) {
+  .wrapper {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .wrapper {
+    width: 90%;
+  }
 }

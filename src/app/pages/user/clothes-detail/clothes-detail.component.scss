@@ -1,0 +1,55 @@
+@import "~src/variables";
+
+app-page-container {
+
+  h2 {
+    text-transform: capitalize;
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  .content {
+
+    display: flex;
+    flex-wrap: wrap;
+
+    .image-box {
+      min-width: 600px;
+      flex: 1;
+      height: auto;
+    }
+
+    @media screen and (max-width: 1000px) {
+
+      flex-direction: column;
+
+      .image-box {
+        min-width: 0;
+      }
+
+      .text-box {
+        min-width: 0;
+      }
+    }
+
+    .text-box {
+      background-color: $page-background-color-second;
+      padding: 20px;
+      border-radius: 3px;
+      min-width: 300px;
+      flex: 1;
+      table {
+        width: 100%;
+        tr {
+          height: 30px;
+        }
+      }
+    }
+  }
+
+}
+

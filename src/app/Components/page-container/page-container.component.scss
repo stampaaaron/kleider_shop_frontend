@@ -1,0 +1,8 @@
+@import "~src/variables";
+
+.page-container {
+  padding: 40px;
+  background-color: $page-background-color;
+  border-radius: 3px;
+  box-shadow: 3px 3px 15px lighten(black, 80);
+}

@@ -1,0 +1,42 @@
+@import "~src/variables";
+
+.item-box {
+  min-height: 300px;
+  background-color: $page-background-color;
+  box-shadow: 3px 3px 15px lighten(black, 80);
+  border-radius: 3px;
+  display: flex;
+  flex-flow: nowrap column;
+  overflow: hidden;
+  transition: box-shadow 0.2s, background-color 0.2s;
+
+  &:hover {
+    box-shadow: 3px 3px 15px lighten(black, 65);
+    background-color: $page-background-color-hover;
+  }
+
+  .image-box {
+    flex: 1;
+  }
+
+  .text-box {
+    padding: 20px;
+    height: 100px;
+    display: flex;
+    .text {
+      flex: 1;
+      h3, h4 {
+        text-transform: capitalize;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+    }
+    .controlls {
+      display: flex;
+      align-items: center;
+      width: 40px;
+    }
+
+  }
+}

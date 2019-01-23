@@ -1,0 +1,16 @@
+<a [routerLink]="['/clothes', item.id]">
+  <div class="item-box">
+    <div class="image-box">
+
+    </div>
+    <div class="text-box">
+      <div class="text">
+        <h3>{{item.name}}</h3>
+        <h4>{{item.brand.brand}}</h4>
+      </div>
+      <div class="controlls">
+        <app-icon-button>shopping_cart</app-icon-button>
+      </div>
+    </div>
+  </div>
+</a>

@@ -3,3 +3,12 @@ $main-color: #000000;
 $wrapper-size: 60%;
 $background-color: #eeeeee;
 $page-background-color: white;
+$page-background-color-second: darken($page-background-color, 2);
+$page-background-color-hover: darken($page-background-color, 1);
+
+$divider-color: rgb(195, 195, 195);
+
+$font-color-dark: rgb(55, 55, 55);
+$font-color-darker: rgb(41, 41, 41);
+
+$icon-hover: rgba(0, 0, 0, 0.15);

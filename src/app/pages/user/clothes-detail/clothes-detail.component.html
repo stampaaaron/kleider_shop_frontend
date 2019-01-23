@@ -1,0 +1,42 @@
+<app-page-container>
+  <ng-container *ngIf="item">
+    <div class="content">
+      <div class="image-box">
+        <img src="https://i.ytimg.com/vi/DrLQX6o5YJ8/maxresdefault.jpg"/>
+      </div>
+      <div class="text-box">
+        <h2>{{item.name}}</h2>
+        <table>
+          <tr>
+            <th>Type:</th>
+            <td>{{item.clothesType.type}}</td>
+          </tr>
+          <tr>
+            <th>Brand:</th>
+            <td>{{item.brand.brand}}</td>
+          </tr>
+          <tr>
+            <th>Seasons:</th>
+            <td>
+              <ng-container *ngIf="item.seasons.length <= 1; then oneSeason; else multipleSeason"></ng-container>
+              <ng-template #oneSeason>
+                <span *ngFor="let season of item.seasons">
+                  {{season.season}}
+                </span>
+              </ng-template>
+              <ng-template #multipleSeason>
+                <span *ngFor="let season of item.seasons">
+                  {{season.season}} /
+                </span>
+              </ng-template>
+            </td>
+          </tr>
+        </table>
+        <app-horizontal-divider></app-horizontal-divider>
+        <h3>Description:</h3>
+        <p>{{item.description}}</p>
+      </div>
+    </div>
+  </ng-container>
+</app-page-container>
+

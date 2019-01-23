@@ -1,20 +1,56 @@
 @import'variables.scss';
+@import '~material-icons/iconfont/material-icons.css';
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border_box
+  box-sizing: border-box;
+
+  &:first-letter {
+    text-transform: uppercase;
+  }
 }
 
 body {
   font-family: Arial, sans-serif;
   background-color: $background-color;
+  color: $font-color-darker;
 }
 
 .wrapper {
   margin: 0 auto;
 }
 
+a {
+  color: $font-color-dark;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
 h1 {
   font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: normal;
+  color: $font-color-dark;
+}
+
+ul {
+  margin-left: 18px;
+}
+
+table {
+  th {
+    text-align: left;
+  }
 }
