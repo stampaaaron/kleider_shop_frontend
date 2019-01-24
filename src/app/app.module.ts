@@ -23,6 +23,7 @@ import { ShoppingCartItemComponent } from './pages/shoppingcart/shopping-cart-it
 import { CounterComponent } from "./Components/counter/counter.component";
 import { CheckoutComponent } from './pages/user/checkout/checkout.component';
 import {FormsModule} from "@angular/forms";
+import { ConfirmationPageComponent } from './pages/user/confirmation-page/confirmation-page.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import {FormsModule} from "@angular/forms";
     ShoppingcartComponent,
     ShoppingCartItemComponent,
     CounterComponent,
-    CheckoutComponent
+    CheckoutComponent,
+    ConfirmationPageComponent
   ],
   imports: [
     BrowserModule,

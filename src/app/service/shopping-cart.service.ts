@@ -40,4 +40,14 @@ export class ShoppingCartService {
   removeItem(item: Clothes) {
     this.clothesItems.splice(this.clothesItems.indexOf(item), 1)
   }
+
+  clear() {
+  this.orderItem = {
+      clothesOrderItems: [],
+      firstName: '',
+      lastName: '',
+      street: '',
+      plz: '',
+    } as OrderItem;
+  }
 }

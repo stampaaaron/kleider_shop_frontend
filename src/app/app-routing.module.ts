@@ -5,13 +5,15 @@ import {ClothesItemComponent} from "./pages/user/clothes-list/clothes-item/cloth
 import {ClothesDetailComponent} from "./pages/user/clothes-detail/clothes-detail.component";
 import {ShoppingcartComponent} from "./pages/shoppingcart/shoppingcart.component";
 import {CheckoutComponent} from "./pages/user/checkout/checkout.component";
+import {ConfirmationPageComponent} from "./pages/user/confirmation-page/confirmation-page.component";
 
 const routes: Routes = [
   {path: '', redirectTo: '/clothes', pathMatch: 'full'},
   {path: 'clothes', component: ClothesListComponent},
   {path: 'clothes/:id', component: ClothesDetailComponent},
   {path: 'shoppingcart', component: ShoppingcartComponent},
-  {path: 'checkout', component: CheckoutComponent}
+  {path: 'checkout', component: CheckoutComponent},
+  {path: 'confirmation', component: ConfirmationPageComponent}
 ];
 
 @NgModule({
