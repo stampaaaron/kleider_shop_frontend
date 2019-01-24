@@ -1,0 +1,21 @@
+<app-page-container>
+  <h2>Checkout</h2>
+  <div class="form">
+    <mat-form-field color="primary" >
+      <input type="text" matInput placeholder="Vorname" [(ngModel)]="shoppingCartService.orderItem.firstName"/>
+    </mat-form-field>
+    <mat-form-field color="primary">
+      <input type="text" matInput placeholder="Nachname" [(ngModel)]="shoppingCartService.orderItem.lastName"/>
+    </mat-form-field>
+    <mat-form-field color="primary">
+      <input type="text" matInput placeholder="Strasse" [(ngModel)]="shoppingCartService.orderItem.street"/>
+    </mat-form-field>
+    <mat-form-field color="primary">
+      <input type="text" matInput placeholder="PLZ" [(ngModel)]="shoppingCartService.orderItem.plz" />
+    </mat-form-field>
+
+  </div>
+  <div class="button-bar">
+    <button>Bestellen ></button>
+  </div>
+</app-page-container>

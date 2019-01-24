@@ -1,5 +1,6 @@
 @import'variables.scss';
 @import '~material-icons/iconfont/material-icons.css';
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 
 * {
   margin: 0;
@@ -57,5 +58,48 @@ ul {
 table {
   th {
     text-align: left;
+  }
+}
+
+button {
+  background-color: $font-color-darker;
+  color: white;
+  transition: background-color 0.2s;
+  border: none;
+  outline: none;
+  padding: 8px 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 2px;
+
+  &:hover {
+    background-color: $background-color;
+    color: black;
+  }
+}
+
+input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid $font-color-darker;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.button-bar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+  app-icon {
+    margin-right: 10px;
   }
 }

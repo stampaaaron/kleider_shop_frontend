@@ -9,7 +9,7 @@
         <h4>{{item.brand.brand}}</h4>
       </div>
       <div class="controlls">
-        <app-icon-button>shopping_cart</app-icon-button>
+        <app-icon-button (click)="addItem(item);$event.preventDefault();$event.stopPropagation()">shopping_cart</app-icon-button>
       </div>
     </div>
   </div>

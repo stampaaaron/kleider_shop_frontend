@@ -1,12 +1,15 @@
-<a [routerLink]="['/clothes',item.id]">
+<a [routerLink]="['/clothes',item.clothes.id]">
   <div class="content">
     <div class="image-box">
 
     </div>
-    <app-counter></app-counter>
+    <app-counter [counter]="item.count"></app-counter>
     <div class="text-box">
-      <h3>{{item.name}}</h3>
-
+      <h3>{{item.clothes.name}}</h3>
+      <ul>
+        <li>{{item.clothes.clothesType.type}}</li>
+        <li>{{item.clothes.brand.brand}}</li>
+      </ul>
     </div>
   </div>
 

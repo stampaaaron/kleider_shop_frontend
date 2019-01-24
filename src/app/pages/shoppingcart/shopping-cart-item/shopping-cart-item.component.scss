@@ -4,9 +4,14 @@
   padding: 10px 0;
   border-top: 1px solid $divider-color;
   display: flex;
+  width: 100%;
+  align-items: center;
 
   .image-box {
-    width: 150px;
-    height: 100px;
+    width: 120px;
+    height: 80px;
+  }
+  .text-box {
+    margin-left: 10px;
   }
 }

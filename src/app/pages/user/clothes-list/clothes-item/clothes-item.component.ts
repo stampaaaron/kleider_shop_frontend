@@ -1,6 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Clothes} from "../../../../model/Clothes";
-import {ApiService} from "../../../../service/api.service";
+import {ShoppingCartService} from "../../../../service/shopping-cart.service";
 
 @Component({
   selector: 'app-clothes-item',
@@ -11,10 +11,14 @@ export class ClothesItemComponent implements OnInit {
 
   @Input() item: Clothes;
 
-  constructor() {
+  constructor(private shoppingCartService: ShoppingCartService) {
   }
 
   ngOnInit() {
+  }
+
+  addItem(item: Clothes) {
+    this.shoppingCartService.addItem(item)
   }
 
 }

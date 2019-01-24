@@ -1,6 +1,12 @@
 <app-page-container>
   <h2>Warenkorb</h2>
-  <ng-container *ngFor="let item of shoppingCartService.clothesItems">
+  <div class="content" *ngFor="let item of shoppingCartService.orderItem.clothesOrderItems">
     <app-shopping-cart-item [item]="item"></app-shopping-cart-item>
-  </ng-container>
+  </div>
+  <p class="message" *ngIf="shoppingCartService.orderItem.clothesOrderItems.length == 0"><app-icon>info</app-icon>Keine Produkte im Warenkorb</p>
+  <div class="button-bar">
+    <a routerLink="/checkout">
+      <button *ngIf="shoppingCartService.orderItem.clothesOrderItems.length > 0" mat-button="">Checkout ></button>
+    </a>
+  </div>
 </app-page-container>

@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http'
 import {Observable} from "rxjs/index";
 import {Clothes} from "../model/Clothes";
 import {environment} from "../../environments/environment";
+import {OrderItem} from "../model/OrderItem";
 
 @Injectable()
 export class ApiService {
@@ -15,6 +16,10 @@ export class ApiService {
 
   getClothesById(id: number): Observable<Clothes> {
     return this.http.get<Clothes>(`${environment.restURL}/clothes/${id}`);
+  }
+
+  createOrder(orderItem: OrderItem): void {
+
   }
 
 }
