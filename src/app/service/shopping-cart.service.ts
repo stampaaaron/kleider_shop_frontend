@@ -35,7 +35,6 @@ export class ShoppingCartService {
         }
       );
     }
-    console.log(this.orderItem);
   }
 
   removeItem(item: Clothes) {

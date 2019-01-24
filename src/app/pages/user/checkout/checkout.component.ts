@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {ShoppingCartService} from "../../../service/shopping-cart.service";
+import {ApiService} from "../../../service/api.service";
 
 @Component({
   selector: 'app-checkout',
@@ -8,9 +9,12 @@ import {ShoppingCartService} from "../../../service/shopping-cart.service";
 })
 export class CheckoutComponent implements OnInit {
 
-  constructor(private shoppingCartService: ShoppingCartService) { }
+  constructor(private shoppingCartService: ShoppingCartService, private api: ApiService) { }
 
   ngOnInit() {
   }
 
+  submitOrder() {
+    this.api.createOrder(this.shoppingCartService.orderItem);
+  }
 }
