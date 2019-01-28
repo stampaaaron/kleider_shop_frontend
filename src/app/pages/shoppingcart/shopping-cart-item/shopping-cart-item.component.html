@@ -1,9 +1,9 @@
 <a [routerLink]="['/clothes',item.clothes.id]">
   <div class="content">
+    <app-counter [counter]="item.count" (changeCounter)="item.count = $event"></app-counter>
     <div class="image-box">
-
+      <img [src]="'assets/' + item.clothes.id + '.jpg'"/>
     </div>
-    <app-counter [counter]="item.count"></app-counter>
     <div class="text-box">
       <h3>{{item.clothes.name}}</h3>
       <ul>

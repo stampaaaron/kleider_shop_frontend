@@ -1,5 +1,5 @@
 <div class="counter-container">
-  <app-icon-button (click)="decreaseCounter()">remove</app-icon-button>
+  <app-icon-button (click)="decreaseCounter();$event.preventDefault();$event.stopPropagation()">remove</app-icon-button>
   <input type="number" id="{{id}}" title="Anzahl" value="{{counter}}" [value]="counter" (keyup)="onInput($event.target.value)"/>
-  <app-icon-button (click)="increaseCounter()">add</app-icon-button>
+  <app-icon-button (click)="increaseCounter();$event.preventDefault();$event.stopPropagation()">add</app-icon-button>
 </div>

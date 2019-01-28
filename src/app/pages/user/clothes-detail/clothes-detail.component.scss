@@ -16,7 +16,7 @@ app-page-container {
     flex-wrap: wrap;
 
     .image-box {
-      min-width: 600px;
+      min-width: 550px;
       flex: 1;
       height: auto;
     }
@@ -25,7 +25,7 @@ app-page-container {
       background-color: $page-background-color-second;
       padding: 20px;
       border-radius: 3px;
-      min-width: 300px;
+      min-width: 280px;
       flex: 1;
       position: relative;
       table {
