@@ -15,8 +15,6 @@ export class CheckoutComponent implements OnInit {
   ngOnInit() {
   }
 
-  testList: number[] = [1,2,3,4,5,6,7,8];
-
   submitOrder() {
     this.api.createOrder(this.shoppingCartService.orderItem);
     this.shoppingCartService.clear();

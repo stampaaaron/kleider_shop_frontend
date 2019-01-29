@@ -21,9 +21,19 @@
       width: 200px;
       padding: 10px;
       display: flex;
+      transition: background-color 0.1s;
 
-      label {
+      &:hover {
+        background-color: $icon-hover;
+      }
+
+      &:active {
+        background-color: $icon-active;
+      }
+
+      a {
         display: block;
+        width: 100%;
       }
     }
   }
