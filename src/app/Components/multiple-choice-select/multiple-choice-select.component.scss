@@ -1,0 +1,30 @@
+@import "~src/variables";
+
+.container {
+
+  position: relative;
+
+  a {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+
+  .popup {
+    background-color: $page-background-color;
+    box-shadow: 3px 3px 15px lighten(black, 80);
+    position: absolute;
+    padding: 10px 0;
+    z-index: 1;
+
+    .option {
+      width: 200px;
+      padding: 10px;
+      display: flex;
+
+      label {
+        display: block;
+      }
+    }
+  }
+}

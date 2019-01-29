@@ -1,3 +1,14 @@
+<app-page-container>
+  <app-multiple-choice-select
+    [values]="['test','test2','test3','test4','test5']"
+    [keys]="[1,2,3,4,5]"
+    (optionSelect)="clothesByBrand($event.key)"
+  >
+    Brand
+  </app-multiple-choice-select>
+
+
+</app-page-container>
 <div class="items-grid">
   <ng-container *ngFor="let clothesItem of clothes">
     <app-clothes-item [item]="clothesItem"></app-clothes-item>

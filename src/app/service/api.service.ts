@@ -14,6 +14,11 @@ export class ApiService {
     return this.http.get<Clothes[]>(`${environment.restURL}/clothes`);
   }
 
+  getClothesByBrandId(brandId: number): Observable<Clothes[]> {
+    console.log(`${environment.restURL}/clothes?brandid=${brandId}`);
+    return this.http.get<Clothes[]>(`${environment.restURL}/clothes?brand_id=${brandId}`);
+  }
+
   getClothesById(id: number): Observable<Clothes> {
     return this.http.get<Clothes>(`${environment.restURL}/clothes/${id}`);
   }

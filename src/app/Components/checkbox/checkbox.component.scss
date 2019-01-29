@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  app-icon-button {
+    margin-right: 5px;
+  }
+}

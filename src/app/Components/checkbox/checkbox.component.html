@@ -1,0 +1,15 @@
+<div (click)="checked = !checked"  class="container">
+
+  <ng-container *ngIf="checked">
+    <app-icon-button>check_box</app-icon-button>
+  </ng-container>
+  <ng-container *ngIf="!checked">
+    <app-icon-button>check_box_outline_blank</app-icon-button>
+  </ng-container>
+
+  <a >
+    <ng-content></ng-content>
+  </a>
+
+
+</div>

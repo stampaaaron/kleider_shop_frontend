@@ -24,6 +24,8 @@ import { CounterComponent } from "./Components/counter/counter.component";
 import { CheckoutComponent } from './pages/user/checkout/checkout.component';
 import {FormsModule} from "@angular/forms";
 import { ConfirmationPageComponent } from './pages/user/confirmation-page/confirmation-page.component';
+import { MultipleChoiceSelectComponent } from './Components/multiple-choice-select/multiple-choice-select.component';
+import { CheckboxComponent } from './Components/checkbox/checkbox.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,9 @@ import { ConfirmationPageComponent } from './pages/user/confirmation-page/confir
     ShoppingCartItemComponent,
     CounterComponent,
     CheckoutComponent,
-    ConfirmationPageComponent
+    ConfirmationPageComponent,
+    MultipleChoiceSelectComponent,
+    CheckboxComponent
   ],
   imports: [
     BrowserModule,

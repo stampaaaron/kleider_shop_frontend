@@ -19,4 +19,10 @@ export class ClothesListComponent implements OnInit {
     });
   }
 
+  clothesByBrand(brandId: number) {
+    console.log(brandId);
+    this.apiService.getClothesByBrandId(brandId).subscribe(clothes => {
+      this.clothes = clothes;
+    });
+  }
 }

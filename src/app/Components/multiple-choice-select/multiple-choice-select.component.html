@@ -1,0 +1,16 @@
+<div class="container">
+  <a (click)="open = !open">
+    <ng-content></ng-content>
+    <app-icon>expand_more</app-icon>
+  </a>
+
+  <ng-container *ngIf="open">
+    <div class="popup">
+      <div class="option" *ngFor="let option of options">
+        <a (click)="selectOption(option);open = false">{{option.value}}</a>
+      </div>
+    </div>
+    <div class="background" (click)="open = false"></div>
+  </ng-container>
+</div>
+
