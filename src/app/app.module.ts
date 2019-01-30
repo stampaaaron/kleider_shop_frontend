@@ -27,6 +27,7 @@ import { ConfirmationPageComponent } from './pages/user/confirmation-page/confir
 import { MultipleChoiceSelectComponent } from './Components/multiple-choice-select/multiple-choice-select.component';
 import { CheckboxComponent } from './Components/checkbox/checkbox.component';
 import { TagComponent } from './Components/tag/tag.component';
+import { VerticalDividerComponent } from './Components/vertical-divider/vertical-divider.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { TagComponent } from './Components/tag/tag.component';
     ConfirmationPageComponent,
     MultipleChoiceSelectComponent,
     CheckboxComponent,
-    TagComponent
+    TagComponent,
+    VerticalDividerComponent
   ],
   imports: [
     BrowserModule,
