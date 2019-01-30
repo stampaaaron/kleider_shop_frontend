@@ -1,0 +1,14 @@
+@import "~src/variables";
+
+.container {
+  border-radius: 20px;
+  border: 1px solid $divider-color;
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+  height: 35px;
+  app-icon-button {
+    margin-left: -4px;
+    transform: scale(0.8);
+   }
+}

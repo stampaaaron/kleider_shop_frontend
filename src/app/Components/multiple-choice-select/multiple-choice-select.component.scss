@@ -19,7 +19,6 @@
 
     .option {
       width: 200px;
-      padding: 10px;
       display: flex;
       transition: background-color 0.1s;
 
@@ -34,6 +33,7 @@
       a {
         display: block;
         width: 100%;
+        padding: 10px;
       }
     }
   }

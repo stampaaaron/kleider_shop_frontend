@@ -26,6 +26,7 @@ import {FormsModule} from "@angular/forms";
 import { ConfirmationPageComponent } from './pages/user/confirmation-page/confirmation-page.component';
 import { MultipleChoiceSelectComponent } from './Components/multiple-choice-select/multiple-choice-select.component';
 import { CheckboxComponent } from './Components/checkbox/checkbox.component';
+import { TagComponent } from './Components/tag/tag.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { CheckboxComponent } from './Components/checkbox/checkbox.component';
     CheckoutComponent,
     ConfirmationPageComponent,
     MultipleChoiceSelectComponent,
-    CheckboxComponent
+    CheckboxComponent,
+    TagComponent
   ],
   imports: [
     BrowserModule,

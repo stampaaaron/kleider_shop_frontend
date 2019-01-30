@@ -18,7 +18,6 @@ export class MultipleChoiceSelectComponent implements OnInit {
 
   ngOnInit() {
     this.open = false;
-    console.log('multiple-choice load');
   }
 
   get options() {
@@ -33,7 +32,7 @@ export class MultipleChoiceSelectComponent implements OnInit {
   }
 
   selectOption(option: object) {
-    console.log("option " + option.value + " selected");
+    // console.log("option " + option.value + " selected");
     this.optionSelect.emit(option);
   }
 

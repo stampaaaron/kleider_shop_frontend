@@ -1,12 +1,24 @@
 <div class="control-bar">
-  <app-multiple-choice-select
-    [values]="getBrandNames()"
-    [keys]="getBrandIds()"
-    (optionSelect)="clothesByBrand($event.key)"
-  >
-    Brand
-  </app-multiple-choice-select>
+  <div class="left">
+    <app-multiple-choice-select
+      [values]="getBrandNames()"
+      [keys]="getBrandIds()"
+      (optionSelect)="clothesByBrand($event)"
+    >
+      Brand
+    </app-multiple-choice-select>
 
+    <app-multiple-choice-select
+      [values]="getTypeNames()"
+      [keys]="getTypeIds()"
+      (optionSelect)="clothesByType($event)"
+    >
+      Type
+    </app-multiple-choice-select>
+  </div>
+  <div class="right">
+    <app-tag *ngFor="let filterItem of filter" [filterItem]="filterItem" (remove)="removeFilter(filterItem)"></app-tag>
+  </div>
 
 </div>
 <div class="items-grid">
@@ -14,4 +26,7 @@
     <app-clothes-item [item]="clothesItem"></app-clothes-item>
   </ng-container>
 </div>
+<ng-container *ngIf="clothes.length < 1">
+  <p class="message"><app-icon>info</app-icon>Keine passenden Ergebnisse gefunden</p>
+</ng-container>
 
