@@ -48,8 +48,8 @@ export class ClothesListComponent implements OnInit {
       this.filter.splice(index, 1);
     }
     this.filter.push({
-      name: brand.value,
-      value: brand.key,
+      name: brand.value || '',
+      value: brand.key || -1,
       urlParameter: 'brand_id'
     } as FilterItem);
     this.applyFilter();
@@ -61,8 +61,8 @@ export class ClothesListComponent implements OnInit {
       this.filter.splice(index, 1);
     }
     this.filter.push({
-      name: type.value,
-      value: type.key,
+      name: type.value || '',
+      value: type.key || -1,
       urlParameter: 'type_id'
     } as FilterItem);
     this.applyFilter();
