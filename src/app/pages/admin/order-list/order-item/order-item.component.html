@@ -1,0 +1,17 @@
+<div class="container">
+  <h3>{{formatDate(orderItem.orderDate)}}</h3>
+  <table>
+    <tr>
+      <th>Name:</th>
+      <td>{{orderItem.firstName}} {{orderItem.lastName}}</td>
+    </tr>
+    <tr>
+      <th>Adresse:</th>
+      <td>{{orderItem.street}} / {{orderItem.plz}}</td>
+    </tr>
+    <tr>
+      <th>Anzahl Kleider:</th>
+      <td>{{countItems()}}</td>
+    </tr>
+  </table>
+</div>

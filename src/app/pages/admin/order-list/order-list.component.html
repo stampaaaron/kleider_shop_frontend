@@ -1,0 +1,6 @@
+<app-page-container>
+  <h2>Order List</h2>
+  <ng-container *ngFor="let orderItem of orderItems">
+    <app-order-item [orderItem]="orderItem"></app-order-item>
+  </ng-container>
+</app-page-container>

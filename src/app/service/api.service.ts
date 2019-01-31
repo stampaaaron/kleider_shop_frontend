@@ -13,18 +13,6 @@ export class ApiService {
 
   constructor(private http: HttpClient) { }
 
-  getClothes(): Observable<Clothes[]> {
-    return this.http.get<Clothes[]>(`${environment.restURL}/clothes`);
-  }
-
-  getClothesByBrandId(brandId: number): Observable<Clothes[]> {
-    return this.http.get<Clothes[]>(`${environment.restURL}/clothes?brand_id=${brandId}`);
-  }
-
-  getClothesByTypeId(typeId: number): Observable<Clothes[]> {
-    return this.http.get<Clothes[]>(`${environment.restURL}/clothes?type_id=${typeId}`);
-  }
-
   getClothesByFilter(filter: FilterItem[]): Observable<Clothes[]> {
     let requestURL: string = `${environment.restURL}/clothes?`;
     filter.forEach(item => {
@@ -46,11 +34,16 @@ export class ApiService {
     return this.http.get<ClothesType[]>(`${environment.restURL}/type`)
   }
 
+  getOrders(): Observable<OrderItem[]> {
+    return this.http.get<OrderItem[]>(`${environment.restURL}/order`)
+  }
+
   createOrder(orderItem: OrderItem): void {
     console.log(orderItem);
     console.log(`${environment.restURL}/order`);
     this.http.post<OrderItem>(`${environment.restURL}/order`, orderItem).subscribe();
   }
+
 
 
 }

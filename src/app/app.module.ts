@@ -28,6 +28,8 @@ import { MultipleChoiceSelectComponent } from './Components/multiple-choice-sele
 import { CheckboxComponent } from './Components/checkbox/checkbox.component';
 import { TagComponent } from './Components/tag/tag.component';
 import { VerticalDividerComponent } from './Components/vertical-divider/vertical-divider.component';
+import { OrderListComponent } from './pages/admin/order-list/order-list.component';
+import { OrderItemComponent } from './pages/admin/order-list/order-item/order-item.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +51,9 @@ import { VerticalDividerComponent } from './Components/vertical-divider/vertical
     MultipleChoiceSelectComponent,
     CheckboxComponent,
     TagComponent,
-    VerticalDividerComponent
+    VerticalDividerComponent,
+    OrderListComponent,
+    OrderItemComponent
   ],
   imports: [
     BrowserModule,

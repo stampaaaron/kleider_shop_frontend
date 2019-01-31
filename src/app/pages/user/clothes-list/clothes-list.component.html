@@ -23,7 +23,9 @@
 </div>
 <div class="items-grid">
   <ng-container *ngFor="let clothesItem of clothes">
-    <app-clothes-item [item]="clothesItem"></app-clothes-item>
+    <a [routerLink]="['/clothes', clothesItem.id]">
+      <app-clothes-item style="z-index: -1" [item]="clothesItem"></app-clothes-item>
+    </a>
   </ng-container>
 </div>
 <ng-container *ngIf="clothes.length < 1">

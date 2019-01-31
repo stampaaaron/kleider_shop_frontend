@@ -5,5 +5,6 @@ export interface OrderItem {
   lastName: string,
   street: string,
   plz: string,
+  orderDate: Date,
   clothesOrderItems: ClothesOrderItem[]
 }
